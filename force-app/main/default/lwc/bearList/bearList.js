@@ -7,6 +7,7 @@ import searchBears from '@salesforce/apex/BearController.searchBears';
 export default class BearList extends NavigationMixin(LightningElement) {
 	searchTerm = '';
 	bears;
+	// this is an update to my JS
 @wire(MessageContext) messageContext;
 @wire(searchBears, {searchTerm: '$searchTerm'})
 loadBears(result) {
